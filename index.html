@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TEL-EAT (텔-잇) | 프리미엄 조식의 새로운 기준</title>
+<meta content="숙박업소를 위한 B2B 프리미엄 간편식 운영 시스템 TEL-EAT" name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Noto+Sans+KR:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#e60510',
+            dark: '#111111',
+            grayLight: '#f9f9f9',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans KR', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    
+    /* Random Letter Swap Utility */
+    .swap-text {
+      display: inline-block;
+      min-width: 1ch;
+    }
+  </style>
+</head>
+<body class="bg-white text-dark font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-black tracking-tighter text-brand logo-swap" data-value="TEL-EAT">TEL-EAT</span>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-brand transition-colors" href="#problems">시장 문제</a>
+<a class="hover:text-brand transition-colors" href="#solution">솔루션</a>
+<a class="hover:text-brand transition-colors" href="#process">운영 방식</a>
+<a class="hover:text-brand transition-colors" href="#menu">메뉴</a>
+<a class="px-5 py-2.5 bg-brand text-white rounded-full hover:bg-red-700 transition-all" href="#contact">도입 상담</a>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<section class="relative pt-32 pb-20 lg:pt-52 lg:pb-40 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="max-w-3xl">
+<p class="text-brand font-bold tracking-widest mb-4 animate-fade-in">B2B PREMIUM BREAKFAST SOLUTION</p>
+<h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] mb-8 animate-fade-in delay-1">
+<span class="logo-swap block mb-2" data-value="TEL-EAT">TEL-EAT</span>
+          프리미엄 조식의<br/>새로운 기준
+        </h1>
+<p class="text-xl text-gray-600 mb-10 leading-relaxed animate-fade-in delay-2">
+          숙박업소 내 객실 식사 제공을 표준화하여<br class="hidden md:block"/> 
+          주문·조리·제공 전 과정을 효율화하는 스마트 운영 시스템입니다.
+        </p>
+<div class="flex flex-wrap gap-4 animate-fade-in delay-2">
+<a class="px-8 py-4 bg-brand text-white font-bold rounded-lg shadow-xl shadow-red-200 hover:-translate-y-1 transition-all" href="#contact">무료 상담 신청하기</a>
+<div class="flex items-center gap-4 px-6 py-4 border border-gray-200 rounded-lg bg-white">
+<span class="text-xs text-gray-400 uppercase font-bold tracking-tighter">Partners</span>
+<span class="font-bold text-gray-800">고선생</span>
+<span class="w-[1px] h-3 bg-gray-300"></span>
+<span class="font-bold text-gray-800">KT 하이오더</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Decor -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-grayLight -z-0 rounded-bl-[200px] hidden lg:block">
+<img alt="Premium Breakfast" class="w-full h-full object-cover opacity-80 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1BMrCYuxGyYYMjS_nqhK8XSkTBhUrAKiyiK16k4jmvh-v29L4Bd8SloX2AEcuJo66uoC1N4RoLgV5GW-2ELL_Pk_g5VIX6tGvRimTpcmsl5g7FTmEA03JmrlaG1iNAnOD8dL7fPjUd0k2GSw2-4kngsRiD5YYVVOzQBgPL0JCaMfRA4MyGK0GcCs9SKrpljq3H1ucTR8uLbX90ShkFzQblpK4VfDrqy4F-IEFoUU1TPKevifUByzfmL_rD41apTeLJy8FX_947CQ"/>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Problems Section -->
+<section class="py-24 bg-white" id="problems">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">숙박업이 직면한 4가지 문제</h2>
+<div class="w-12 h-1 bg-brand mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="p-8 rounded-2xl bg-grayLight hover:shadow-xl transition-all border border-transparent hover:border-brand/10 group">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-brand mb-6 shadow-sm group-hover:bg-brand group-hover:text-white transition-colors">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">수익 구조 압박</h3>
+<p class="text-gray-600 text-sm leading-relaxed">객실 요금 인상의 한계와 지속적으로 증가하는 OTA 수수료 부담</p>
+</div>
+<!-- Card 2 -->
+<div class="p-8 rounded-2xl bg-grayLight hover:shadow-xl transition-all border border-transparent hover:border-brand/10 group">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-brand mb-6 shadow-sm group-hover:bg-brand group-hover:text-white transition-colors">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">운영 효율 저하</h3>
+<p class="text-gray-600 text-sm leading-relaxed">추가 인력 채용의 어려움과 비효율적인 구조로 인한 비용 증가</p>
+</div>
+<!-- Card 3 -->
+<div class="p-8 rounded-2xl bg-grayLight hover:shadow-xl transition-all border border-transparent hover:border-brand/10 group">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-brand mb-6 shadow-sm group-hover:bg-brand group-hover:text-white transition-colors">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">서비스 기준 변화</h3>
+<p class="text-gray-600 text-sm leading-relaxed">단순 가성비를 넘어선 편의성과 완결된 경험을 요구하는 고객</p>
+</div>
+<!-- Card 4 -->
+<div class="p-8 rounded-2xl bg-grayLight hover:shadow-xl transition-all border border-transparent hover:border-brand/10 group">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-brand mb-6 shadow-sm group-hover:bg-brand group-hover:text-white transition-colors">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold mb-3">운영 리스크 증가</h3>
+<p class="text-gray-600 text-sm leading-relaxed">외부 음식 반입으로 인한 냄새, 쓰레기, 소음 민원 발생</p>
+</div>
+</div>
+<div class="mt-16 p-10 bg-brand text-white rounded-3xl text-center">
+<p class="text-2xl font-bold italic">"이제는 운영을 늘리는 방식이 아닌, 구조를 바꾸는 해법이 필요합니다."</p>
+</div>
+</div>
+</section>
+<!-- END: Problems Section -->
+<!-- BEGIN: Solution Comparison -->
+<section class="py-24 bg-grayLight" id="solution">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">조식 제공이 경쟁력입니다</h2>
+<p class="text-gray-500">TEL-EAT 도입 전후 비교</p>
+</div>
+<div class="overflow-hidden rounded-3xl bg-white shadow-2xl">
+<div class="grid grid-cols-3 bg-dark text-white p-6 font-bold text-lg">
+<div>구분</div>
+<div class="text-center opacity-50">조식 미도입</div>
+<div class="text-center text-brand">TEL-EAT 도입</div>
+</div>
+<!-- Row 1 -->
+<div class="grid grid-cols-3 border-b border-gray-100 p-8 items-center">
+<div class="font-bold text-gray-400">비교 경쟁력</div>
+<div class="text-center text-gray-500 text-sm">가격 중심 비교<br/>차별 요소 부족</div>
+<div class="text-center font-bold text-dark">조식 포함 옵션으로<br/>예약 경쟁력 강화</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-3 border-b border-gray-100 p-8 items-center">
+<div class="font-bold text-gray-400">브랜드 인식</div>
+<div class="text-center text-gray-500 text-sm">"잠만 자는 숙소"<br/>제한된 경험</div>
+<div class="text-center font-bold text-dark">"아침까지 해결되는 숙소"<br/>완결된 숙박 경험 제공</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-3 p-8 items-center">
+<div class="font-bold text-gray-400">리뷰 경쟁력</div>
+<div class="text-center text-gray-500 text-sm">시설·위치 위주<br/>후기 경쟁력 부족</div>
+<div class="text-center font-bold text-dark">조식 만족 긍정 리뷰<br/>차별화된 후기 확보</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Solution Comparison -->
+<!-- BEGIN: Process Section -->
+<section class="py-24 bg-white overflow-hidden" id="process">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">3-Step 운영 시스템</h2>
+<p class="text-gray-500">숙박업 현장에 최적화된 가장 간편한 프로세스</p>
+</div>
+<div class="relative grid md:grid-cols-3 gap-12">
+<!-- Path line (Desktop only) -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-gray-200 -translate-y-1/2 z-0"></div>
+<!-- Step 1 -->
+<div class="relative z-10 bg-white p-8 rounded-2xl border border-gray-100 shadow-xl text-center group">
+<div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 group-hover:scale-110 transition-transform">1</div>
+<h3 class="text-xl font-extrabold mb-3">주문</h3>
+<p class="text-gray-600 text-sm">객실 내 테이블 오더로<br/>간편하게 비대면 주문</p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 bg-white p-8 rounded-2xl border border-gray-100 shadow-xl text-center group">
+<div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 group-hover:scale-110 transition-transform">2</div>
+<h3 class="text-xl font-extrabold mb-3">조리</h3>
+<p class="text-gray-600 text-sm">표준화된 매뉴얼로<br/>약 3분 내 조리 완료</p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 bg-white p-8 rounded-2xl border border-gray-100 shadow-xl text-center group">
+<div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 group-hover:scale-110 transition-transform">3</div>
+<h3 class="text-xl font-extrabold mb-3">제공</h3>
+<p class="text-gray-600 text-sm">운영 환경에 맞춘<br/>최적의 방식으로 고객 제공</p>
+</div>
+</div>
+<div class="mt-20 flex flex-col md:flex-row items-center gap-10 bg-grayLight p-8 rounded-3xl">
+<div class="w-full md:w-1/2 rounded-2xl overflow-hidden h-64">
+<img alt="Kitchen setup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOqMpYEaxIVP1hCrk5GHX6M40LX_g4RY_UK1RacCAN2Np2HML-BlTzgEo2XJNgo5Xb5M7zR_o25dxkJjY9qvWEIZRfCJUg9Inili5fCrCdSjaIfaBZMPsqQjN3JLCBfryUiQszVXLLEVFKihw-n3U7Ub1z7vU3r-E0E7hMRuuA1OFm8pxxMXx2-fPDO49OP0-f-UKJZxKJUHO1wIatq2UOM5kcygEGra1YOxElhBklPEz3s4hPf02u98bdQYtIZ2zyRRfUCmH-HmM"/>
+</div>
+<div class="w-full md:w-1/2">
+<h4 class="text-2xl font-bold mb-4">추가 투자 없이 개선되는 수익 구조</h4>
+<p class="text-gray-600 leading-relaxed">
+            TEL-EAT은 기존 시설을 활용하여 빠르게 도입 가능합니다. 별도의 주방 증축이나 설비 투자 없이도 프리미엄 조식 서비스를 즉시 시작할 수 있습니다.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Process Section -->
+<!-- BEGIN: Menu Section -->
+<section class="py-24 bg-dark text-white" id="menu">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-3xl md:text-5xl font-extrabold mb-4">프리미엄 메뉴 라인업</h2>
+<p class="text-gray-400">원가는 낮추고 마진은 확실하게 확보합니다</p>
+</div>
+<div class="hidden md:block text-right">
+<span class="text-brand font-bold text-4xl block">140~150%</span>
+<span class="text-gray-500 text-sm">평균 마진율</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Menu Item 1 -->
+<div class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 flex items-center gap-4 hover:bg-white/10 transition-all">
+<div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+<img alt="곰탕" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDClSaOCXnD646GhDeXYXFtkBRLZkSx25pHWsmatZeR5wQa7dVM3hBOGslfwfgYNeCmiENi4vHCrmNSpaAm_eTyxgXqWouz1k-t0woqaCh6R10XujiQQ6c75TWJfFo5-l9SFu449W8TZua8vG4fb8GumCb9b4LKDHA5aMvAZ2Z62R7ElBwGxQa1lRc0jTpdOj86LShgySDs-ibIKmfLCquJbojs81B3wPc_jRyHFpVN_nGDYBBHYvqG_IV41gu9oDIXHZNpHeBSwes"/>
+</div>
+<div>
+<h4 class="font-bold text-lg">진한 사골 곰탕</h4>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-xs px-2 py-0.5 bg-brand/20 text-brand rounded">마진 142%</span>
+<span class="text-white/60 text-sm">10,900원</span>
+</div>
+</div>
+</div>
+<!-- Menu Item 2 -->
+<div class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 flex items-center gap-4 hover:bg-white/10 transition-all">
+<div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+<img alt="갈비탕" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-yBS0kSe_ZP1lAbZ02QYZ9h60NVsqogg1S70D-h60hvGrZhhu-quapuX1omaj7dCVcimmv3el6dBRYzUutMZV5AOrUEvgIngrkSFGKyW4K6lc92kXElOwvxsytMsW_wwmxfFCC2X1dYK2peApQUtuTVf2HrJj1NMGsH0CEvIH1z2rwyfZwblN9o9cgU2-o819pxeO_Xl8LW4kZXqB2tChs2kZL-E9cdK-gWz2QUW8vU5HnlmBTJ7bkJ4k3xypFK8h9oZ6OvDR7RQ"/>
+</div>
+<div>
+<h4 class="font-bold text-lg">왕 갈비탕</h4>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-xs px-2 py-0.5 bg-brand/20 text-brand rounded">인기 메뉴</span>
+<span class="text-white/60 text-sm">13,900원</span>
+</div>
+</div>
+</div>
+<!-- Menu Item 3 -->
+<div class="group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 p-6 flex items-center gap-4 hover:bg-white/10 transition-all">
+<div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+<img alt="해장국" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNCsGxCnEXxienfqgABvHKj8NKj0aaumEggJ7uouBR7CD-0RKJBQ7LmjuIHnREdjFDXLwMuvzBbU2Qnqx5oW3nOnhS3FcgAOzf_xChWM8ldEBNqiIuVIz3GYHnladIVrlboDosgII0j5-rm34071CkPg6K9K2TQqRELxmbhqLNWAsmnRzLofGldHKWT9GXncIE-xt56FHiad8Uv3LJeM8eaOc8R5XFNLGKOUpvo3jxw1xSeaAK55V35A4poXP-bQw0k9tnQcV6DaU"/>
+</div>
+<div>
+<h4 class="font-bold text-lg">뼈없는 해장국</h4>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-xs px-2 py-0.5 bg-brand/20 text-brand rounded">마진 153%</span>
+<span class="text-white/60 text-sm">10,900원</span>
+</div>
+</div>
+</div>
+<!-- Additional menu items can be listed here -->
+</div>
+<div class="mt-12 text-center text-gray-500 text-sm">
+        * 외 육개장, 황태해장국, 반계탕 등 10종 이상의 다양한 라인업 보유
+      </div>
+</div>
+</section>
+<!-- END: Menu Section -->
+<!-- BEGIN: Trust & Logistics -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-extrabold mb-6 leading-tight">택배가 아닌,<br/><span class="text-brand">전용 물류</span>로 안전하게</h2>
+<p class="text-gray-600 mb-8 leading-relaxed">
+            대기업 식품 전용 물류망을 사용하여 정해진 시간에 신선하고 안전하게 배송합니다. 
+            충격이나 파손 위험을 최소화한 전용 탑차 배송으로 무인 매장 운영에 최적화되어 있습니다.
+          </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3">
+<svg class="w-5 h-5 text-brand" fill="currentColor" viewbox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L9 10.586l3.293-3.293a1 1 0 111.414 1.414z"></path></svg>
+<span class="font-bold">대기업 물류 인프라 활용</span>
+</li>
+<li class="flex items-center gap-3">
+<svg class="w-5 h-5 text-brand" fill="currentColor" viewbox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L9 10.586l3.293-3.293a1 1 0 111.414 1.414z"></path></svg>
+<span class="font-bold">콜드체인 시스템 준수</span>
+</li>
+<li class="flex items-center gap-3">
+<svg class="w-5 h-5 text-brand" fill="currentColor" viewbox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293l-4 4a1 1 0 01-1.414 0l-2-2a1 1 0 111.414-1.414L9 10.586l3.293-3.293a1 1 0 111.414 1.414z"></path></svg>
+<span class="font-bold">무인 운영 최적화 납품</span>
+</li>
+</ul>
+</div>
+<div class="lg:w-1/2">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-grayLight rounded-2xl p-8 text-center">
+<div class="text-4xl font-black text-dark mb-2">3,000원+</div>
+<div class="text-gray-500 text-sm">객실당 추가 수익</div>
+</div>
+<div class="bg-grayLight rounded-2xl p-8 text-center">
+<div class="text-4xl font-black text-dark mb-2">3분</div>
+<div class="text-gray-500 text-sm">평균 조리 시간</div>
+</div>
+<div class="bg-dark text-white rounded-2xl p-8 col-span-2 text-center">
+<div class="text-xl font-bold mb-1">고객 만족도 리뷰 개선</div>
+<p class="text-gray-400 text-sm italic">"아침까지 해결되니 너무 편해요!"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Trust & Logistics -->
+<!-- BEGIN: CTA Section -->
+<section class="py-24 bg-brand text-white overflow-hidden relative" id="contact">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to transform?</h2>
+<p class="text-xl opacity-90 mb-12">
+          숙소의 경쟁력을 바꾸는 가장 확실한 방법.<br/>
+          지금 TEL-EAT 전문가와 상의하세요.
+        </p>
+<div class="grid md:grid-cols-2 gap-6">
+<button class="bg-white text-brand px-8 py-5 rounded-2xl font-bold text-xl hover:bg-gray-100 transition-colors">
+            무료 컨설팅 신청
+          </button>
+<button class="bg-dark text-white px-8 py-5 rounded-2xl font-bold text-xl hover:bg-gray-800 transition-colors">
+            제휴 제안서 받기
+          </button>
+</div>
+</div>
+</div>
+<!-- Decor element -->
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-red-400/20 rounded-full blur-3xl"></div>
+<div class="absolute -top-20 -left-20 w-80 h-80 bg-red-400/20 rounded-full blur-3xl"></div>
+</section>
+<!-- END: CTA Section -->
+<!-- BEGIN: Footer -->
+<footer class="py-16 bg-white border-t border-gray-100">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+<div>
+<span class="text-3xl font-black tracking-tighter text-brand block mb-4">TEL-EAT</span>
+<p class="text-gray-500 text-sm max-w-sm">
+            TEL-EAT(텔-잇)은 프리미엄 조식의 새로운 기준을 만듭니다. 고선생 FCS의 프리미엄 조식 솔루션.
+          </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 text-sm font-bold text-gray-800">
+<div class="flex flex-col gap-2">
+<span class="text-gray-400 font-normal">운영사</span>
+<span>고선생 FCS</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-gray-400 font-normal">파트너</span>
+<span>KT 하이오더</span>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between gap-4">
+<p class="text-xs text-gray-400">© 2024 TEL-EAT. All rights reserved. 본 자료의 무단 복제·도용을 금합니다.</p>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-brand transition-colors" href="#"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.411 2.865 8.149 6.839 9.47.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.147 22 16.411 22 12c0-5.523-4.477-10-10-10z"></path></svg></a>
+<a class="text-gray-400 hover:text-brand transition-colors" href="#"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.227.412.56.216.96.474 1.38.894.42.42.678.82 1.38 2.227.163.422.358 1.057.412 2.227.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.249 1.805-.412 2.227-.216.56-.474.96-.894 1.38-.42.42-.82.678-2.227 1.38-.422.163-1.057.358-2.227.412-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.805-.249-2.227-.412-.56-.216-.96-.474-1.38-.894-.42-.42-.678-.82-1.38-2.227-.163-.422-.358-1.057-.412-2.227-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.054-1.17.249-1.805.412-2.227.216-.56.474-.96.894-1.38.42-.42.82-.678 2.227-1.38.422-.163 1.057-.358 2.227-.412 1.266-.058 1.646-.07 4.85-.07zM12 0C8.741 0 8.333.014 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558 1.28.059 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.059-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.948-.06-1.277-.262-2.148-.558-2.913-.306-.788-.718-1.459-1.384-2.126-1.107-.666-1.335-1.079-2.126-1.384-.765-.296-1.636-.499-2.913-.558C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"></path></svg></a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: JavaScript Logic -->
+<script data-purpose="random-letter-swap">
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    function startRandomLetterSwap(element) {
+      let interval = null;
+      const originalValue = element.dataset.value;
+      let iteration = 0;
+      
+      clearInterval(interval);
+      
+      interval = setInterval(() => {
+        element.innerText = originalValue
+          .split("")
+          .map((letter, index) => {
+            if(index < iteration) {
+              return originalValue[index];
+            }
+            return letters[Math.floor(Math.random() * 26)]
+          })
+          .join("");
+        
+        if(iteration >= originalValue.length){ 
+          clearInterval(interval);
+        }
+        
+        iteration += 1 / 3;
+      }, 30);
+    }
+
+    // Trigger on load for all .logo-swap elements
+    document.addEventListener('DOMContentLoaded', () => {
+      const targets = document.querySelectorAll('.logo-swap');
+      targets.forEach(el => {
+        // Observer to trigger when visible
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting) {
+              startRandomLetterSwap(el);
+            }
+          });
+        });
+        observer.observe(el);
+        
+        // Also trigger on hover for interactivity
+        el.addEventListener('mouseover', () => startRandomLetterSwap(el));
+      });
+    });
+  </script>
+<!-- END: JavaScript Logic -->
+</body></html>
